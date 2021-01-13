@@ -5,6 +5,7 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 const cors = require("cors");
 
+
 // MongoDB
 var mongoose = require("mongoose");
 const connectDB = async () => {
@@ -33,6 +34,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+
+
+
+
 // Routes
 app.use("/availability", require("./routes/availabilityRoute"));
 app.use("/reserve", require("./routes/reservationRoute"));
@@ -44,5 +49,5 @@ const PORT = process.env.PORT || 3005
 
 app.listen(
   PORT,
-  console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`)
+  console.log(`Server running on port ${PORT}`)
 )

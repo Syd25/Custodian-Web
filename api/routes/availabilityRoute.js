@@ -10,6 +10,12 @@ const Day = require("../models/day").model;
 // }
 
 router.post("/", function(req, res, next) {
+  
+  
+
+
+
+
   console.log("request attempted");
 
   console.log(req.body);

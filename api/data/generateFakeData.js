@@ -1,7 +1,7 @@
 // Randomly generate a fake allTables JSON file
 
 const fs = require("fs");
-const numGuards = Math.floor(Math.random() * 10) + 17; // 16 - 26 (exclusive)
+const numGuards = Math.floor(Math.random() * 10) + 19; // 16 - 26 (exclusive)
 
 let fakeTables = [];
 for (i = 1; i < numGuards; i++) {

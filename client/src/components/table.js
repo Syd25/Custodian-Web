@@ -4,7 +4,8 @@ import { Row, Col } from "reactstrap";
 export default props => {
   const getRow1 = _ => {
     let capacitynumbers = [];
-    for (var i = 0; i < Math.ceil(props.capacitynumbers / 2); i++) {
+     
+    for (var i = 0; i < Math.floor(props.capacitynumbers/2); i++) { 
       capacitynumbers.push(
         <span
           key={i}
@@ -16,7 +17,9 @@ export default props => {
   };
   const getRow2 = _ => {
     let capacitynumbers2 = [];
-    for (var i = 0; i < Math.floor(props.capacitynumbers / 2); i++) {
+    
+    for (var i = 0; i < Math.floor(props.capacitynumbers/2); i++) { 
+
       capacitynumbers2.push(
         <span
           key={i}
